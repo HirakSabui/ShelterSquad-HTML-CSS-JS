@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("./Untitled\ design.png");
+            background-position: center;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+          }
+          .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: transparent;
+          }
+          h2, p {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+              sans-serif;
+            font-size: 25px;
+            color: white;
+          }
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .input-container {
+            justify-content: center;
+            padding: 10px;
+        }
+        
+       
+        #a{
+            color: white;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 20px auto;
+            display: block;
+        }
+        
+        button:hover {
+            background-color: #fff; 
+            color: #000; 
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>AdoConnect</h1>
+    <div class="container">
+        
+
+        <div class="product-container">
+
+        <div class="product">
+          <h2>Rosy</h2>
+          <img src="./3146eda5c1816c8a0e6e1797c8a34717.jpg" alt="pic1" width="50%" />
+          <p>Age: 12 months</p>
+          <p>Adopting ROSY will bring love,companionship,joy and full-filling bonds that will enrich both lifes.</p>
+          <button onclick="buyProduct(1)">Adopt</button>
+        </div>
+
+        <div class="product">
+          <h2>Bellie</h2>
+          <img src="./5192480226_b96d238f0b_b.jpg" alt="pic2" width="50%" />
+          <p>Age: 5 months</p>
+          <p>Adopting BELLIE will reduce stress and offer an unconditional love to your family and enhance joy in your lonely life.</p>
+          <button onclick="buyProduct(2)">Adopt</button>
+        </div>
+      </div>
+
+      <div class="product-container">
+        <div class="product">
+          <h2>Tommy</h2>
+          <img src="./images.jpg" alt="pic2" width="50%" />
+          <p>Age: 8 months</p>
+          <p>TOMMY is a wonderful companion because of its loving nature and an adorable wrinkled face.</p>
+          <button onclick="buyProduct(2)">Adopt</button>
+        </div>
+
+        <div class="product">
+          <h2>Stuart</h2>
+          <img src="./7e77dbbeeebd31a96c17ef33af3ed315.jpg" alt="pic2" width="50%" />
+          <p>Age: 5 months</p>
+        <p>STUART is a small space pet with low maintenance for various living envioronments.He has a compact size. </p>
+          <button onclick="buyProduct(2)">Adopt</button>
+        </div>
+      </div>
+
+      <div class="product-container">
+        <div class="product">
+          <h2>GoldFish</h2>
+          <img src="./goldfish-in-aquarium.jpg" alt="pic2" width="50%" />
+          <p>Age: 4 weeks</p>
+          <button onclick="buyProduct(2)">Adopt</button>
+        </div>
+      </div>
+        <script>
+          function buyProduct(productId) {
+            alert(
+              Product with ID ${productId} has been added to your cart.
+            );
+          }
+        </script>
+      </div>
+    </body>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
